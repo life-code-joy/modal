@@ -23,3 +23,16 @@ for(let i = 0; i < btnsShowModal.length ; i++){
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 
+//eventlistener - 3 types of key presses are available -> keyup, keydown, keypress
+
+document.addEventListener('keypress', function(e) {
+  // console.log(e.key);
+  if(e.key === 'c' && !modal.classList.contains('hidden')){
+    // console.log('c was pressed');
+    
+      closeModal();
+    
+  }
+});
+
+
